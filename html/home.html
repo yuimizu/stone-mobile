@@ -9,94 +9,82 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body id="index" class="landscape">
-    <header id="header">
-        <h1>
-            <a href="">
-                <img src="https://www.stone-m.com/sp/img/logo_new2.png" alt="ロゴ" width="170">
-            </a>
-        </h1>
-        <nav class="navbar">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto">
-                    <li class="nav-item tit01">
-                        <a class="nav-link" href="#">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ニュース</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">パワーストーンファイル</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">店舗検索</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">店舗サービス案内</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ストーンマーケットについて</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">オンラインショップ</a>
-                    </li>
-                    </ul>
+<body id="index top">
+    <div id="wrapper">
+        <header id="header">
+            <h1>
+                <a href="" style="width:170;">ロゴ</a>
+            </h1>
+
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header" style="padding-left: 0;">
+                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="home.html">MENU</a></h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" style="padding: 0;">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item"><a href="./news.html" class="nav-link">ニュース</a></li>
+                                <li class="nav-item"><a href="./file.html" class="nav-link">パワーストーンファイル</a></li>
+                                <li class="nav-item"><a href="./search-shop.html" class="nav-link">店舗検索</a></li>
+                                <li class="nav-item"><a href="./service.html" class="nav-link">店舗サービス案内</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">ストーンマーケットについて</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">オンラインショップ</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">会社概要</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">採用情報</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">お問い合わせ</a></li>  
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/slide_01.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/slide_02.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/slide_03.jpg" class="d-block w-100">
+              </div>
+            </div>
+        </div>
+
+        <section id="content">
+            <div id="tenpoarea2" class="mt20">
+                <h3 class="section-title">
+                    <i class="bi bi-house-door-fill text-warning"></i>
+                    <span>店舗検索</span>
+                </h3>
+                <div  id="tenpo_inner">
+                    <div class="box" style="background-color: #37AFE1;">
+                        <a href="" target="_blank" alt="公式オンラインショップ">
+                            <i class="bi bi-cart-dash"></i>
+                            <span>ONLINE SHOP</span>
+                        </a>
+                    </div>
+                    <div class="box" style="background-color: #3C1E14">
+                        <a href="" target="_blank" alt="お近くの店舗を探す">
+                            <span>お近くのショップは<br>こちらからチェック</span>
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <div class="container py-4">
-        <div class="carousel slide pointer-event" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#main-visual" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#main-visual" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#main-visual" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-          </div>
     
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <img src="../img/slide_01.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../img/slide_02.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item active">
-              <img src="../img/slide_03.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-    </div>
-    
-    <section id="content">
-        <div id="tenpoarea2" class="container mt20">
-            <h3>
-                <span>店舗検索</span>
-            </h3>
-            <div  id="tenpo_inner" class="d-grid gap-2 mx-auto">
-                <a href="" target="_blank" alt="公式オンラインショップ">
-                    <button class="btn btn-primary" type="button">
-                        <i class="bi bi-cart-dash"></i>
-                        <p>ONLINE SHOP</p>
-                    </button>
-                </a>
-                <a href="" target="_blank" alt="お近くの店舗を探す">
-                    <button class="btn btn-primary" type="button">
-                        <p>お近くのショップは<br>こちらからチェック</p>
-                        <i class="bi bi-search"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <div id="sns_area" class="container mt20">
-            <h3>
-                <span>公式SNSアカウント</span>
-            </h3>
-            <div class="mt10 mb10">
+            <div id="sns_area" class="mt20">
+                <h3 class="section-title">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>公式SNSアカウント</span>
+                </h3>
                 <ul class="list-social">
                     <li>
                         <a href="" target="_blank">
@@ -118,312 +106,198 @@
                             <i class="bi bi-line"></i>
                         </a>
                     </li>
-                </ul>
-            </div>			
-        </div>
-        
-        <div id="powerstone_area" class="container mt20">
-            <h3>
-                <span>パワーストーンファイル</span>
-            </h3>
-            <a href="">
-                <img src="../img/powerstonefile.jpg" alt="パワーストーンファイル">
-            </a>
-        </div>
-
-        <div id="bannerarea">
-            <h3>
-                <span>プッシュ・コンテンツ</span>
-            </h3>
-            <div id="banner_inner" class="clearfix w88">
-                <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        【事業者様向けサービス】
-                    </dt>
-                    <dd>
-                        私たちとパワーストーンで世界をひとつにしませんか？
-                    </dd>
-                </dl>
-                <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        ストーンマーケット公式アプリ
-                    </dt>
-                    <dd>
-                        お買い物をよりお得＆便利に♪ストーンマーケット公式アプリが登場しました★
-                    </dd>
-                </dl>
-                <dl class="clearfix">
-                    <p>
-                        <a href="" target="_blank">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        公式オンラインショップ</a>
-                    </dt>
-                    <dd>
-                        <a href="" target="_blank">WEB限定アイテムもたくさん掲載されているストーンマーケット公式通販サイト★</a>
-                    </dd>
-                </dl>
-                <!-- <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        <a href="">あなたの今週の運勢</a>
-                    </dt>
-                    <dd>
-                        <a href="">【月クリスタルさん監修】今週の運勢＆ラッキーアイテムをチェック！</a>
-                    </dd>
-                </dl>
-                <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        <a href="">あなたの今月の運勢</a>
-                    </dt>
-                    <dd>
-                        <a href="">【月クリスタルさん監修】今月の運勢＆ラッキーアイテムをチェック！</a>
-                    </dd>
-                </dl> -->
-                <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        <a href="">人気雑誌掲載情報</a>
-                    </dt>
-                    <dd>
-                        <a href="">ファッション雑誌に掲載されたストーンマーケットのアイテムをチェック♪芸能人とお揃いでオシャレ度アップ！？</a>
-                    </dd>
-                </dl>
-                <dl class="clearfix">
-                    <p style="height: 120px;">
-                        <a href="" target="_blank">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        <a href="" target="_blank">ヴィクトリアドリームブレスレット</a>
-                    </dt>
-                    <dd>
-                        <a href="" target="_blank">ロサンゼルスで大人気の日本製のガラスビーズ。そのガラスビーズを使って、ロスのファッションブランドとコラボ★</a> 
-                    </dd>
-                </dl>
-                <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>
-                        <a href="">パワーストーンファイル</a>
-                    </dt>
-                    <dd>
-                        <a href="">パワーストーン・天然石のことなら「パワーストーンファイル」！気になる石を調べることができる天然石辞典★</a> 
-                    </dd>
-                </dl>
-                <dl class="clearfix">
-                    <p>
-                        <a href="">
-                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114">
-                        </a>
-                    </p>
-                    <dt>JAPAN STONE ＆ POWERS WOOD</dt>
-                    <dd>
-                        <a href="">日本銘石とパワーウッド、日本各地のパワースポットで取れた特別な石や神木をアクセサリーにしました。</a> 
-                    </dd>
-                </dl>
+                </ul>		
             </div>
-        </div>
-        <div id="card" class="image" onclick="location.href='https://www.stone-m.com/sp/service.html'">
-            <img src="https://www.stone-m.com/sp/img/index/banner_premiumcard@3x.png" alt="プレミアム会員サービスについて" width="100%">
-        </div>
-
-
             
+            <div id="powerstone_area" class="mt20">
+                <h3 class="section-title">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>パワーストーンファイル</span>
+                </h3>
+                <a href="">
+                    <img src="" alt="パワーストーンファイル">
+                </a>
+            </div>
+    
+            <div id="bannerarea">
+                <h3 class="section-title">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span>プッシュ・コンテンツ</span>
+                </h3>
+                <div id="banner_inner">
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">【事業者様向けサービス】</h5>
+                            <p class="text">私たちとパワーストーンで世界をひとつにしませんか？</p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">○○マーケット公式アプリ</h5>
+                            <p class="text">お買い物をよりお得＆便利に♪ストーンマーケット公式アプリが登場しました★</p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">公式オンラインショップ</h5>
+                            <p class="text">WEB限定アイテムもたくさん掲載されている○○マーケット公式通販サイト★</p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">人気雑誌掲載情報</h5>
+                            <p class="text">ファッション雑誌に掲載された○○マーケットのアイテムをチェック♪芸能人とお揃いでオシャレ度アップ！？</p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">□□ブレスレット/h5>
+                            <p class="text">○○で大人気の日本製のガラスビーズ。そのガラスビーズを使って、○○のファッションブランドとコラボ★</p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">パワーストーンファイル</h5>
+                            <p class="text">パワーストーン・天然石のことなら「パワーストーンファイル」！気になる石を調べることができる天然石辞典★ </p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="clearfix">
+                        <div class="left">
+                            <img src="https://www.stone-m.com/image/index/index_push_banner_campfire_sp.jpg" width="114;">
+                        </div>
+                        <div class="right">
+                            <h5 class="title">JAPAN STONE ＆ POWERS WOOD</h5>
+                            <p class="text">日本銘石とパワーウッド、日本各地のパワースポットで取れた特別な石や神木をアクセサリーにしました。</p>
+                            <div class="more">
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="card" class="image">
+                <div class="box" style="background-color: #37AFE1;">
+                    <a href="">
+                        <p>プレミアム会員サービスについて</p>
+                    </a>
+                </div>
+            </div>
+    
             <div id="news">
-                <h3>
+                <h3 class="section-title">
+                    <i class="bi bi-newspaper text-warning"></i>
                     <span>最新ニュース</span>
                     <div class="fRight">
-                        <a href="">
-                            <img src="https://www.stone-m.com/sp/img/index/tolist.png" width="60">
-                        </a>
+                        <a href="#" target="_blank">一覧へ<i class="bi bi-chevron-right" style="margin-left: 5px;"></i></a>
                     </div>
                 </h3>
                 <div id="news_inner">
-                    <dl class="clearfix">
-                        <dt class="icon_media_s">2024.10.26</dt>
+                    <dl class="flex">
+                        <dt class="icon_media_s">2024.○○.○○</dt>
                         <dd>
-                            <a href="" id="post-14842">11月開運日</a>
+                            <a href="" id="post-14842">○○月開運日</a>
                         </dd>
-                        <dt class="icon_media_s">2024.10.19</dt>
+                        <dt class="icon_media_s">2024.○○.○○</dt>
                         <dd>
                             <a href="" id="post-14833">パワーストーンどう選ぶ？✨</a>
                         </dd>
-                        <dt class="icon_media_s">2024.10.12</dt>
+                        <dt class="icon_media_s">2024.○○.○○</dt>
                         <dd>
-                            <a href="" id="post-14826">10月誕生石✨</a>
+                            <a href="" id="post-14826">○○月誕生石✨</a>
                         </dd>
-                        <dt class="icon_media_s">2024.09.21</dt>
+                        <dt class="icon_media_s">2024.○○.○○</dt>
                         <dd>
                             <a href="" id="post-14818">天然石の選び方？</a>
                         </dd>
-                        <dt class="icon_media_s">2024.09.14</dt>
+                        <dt class="icon_media_s">2024.○○.○○</dt>
                         <dd>
-                            <a href="" id="post-14809">ラリマーの魅力♪</a>
+                            <a href="" id="post-14809">○○ーの魅力♪</a>
                         </dd>
                     </dl>
                 </div>
             </div>
+    
             <div id="brand">
-                <h3>
+                <h3 class="section-title">
+                    <i class="bi bi-star-fill text-warning"></i>
                     <span>店舗・ブランド紹介</span>
                 </h3>
-                <div class="bx-wrapper" style="max-width: 100%;">
-                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 360px;">
-                        <div id="slide" style="width: 645%; position: relative; transition-duration: 0s; transform: translate3d(-1182px, 0px, 0px);">
-                            <div style="float: left; list-style: none; position: relative; width: 591px;" class="bx-clone">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div style="float: left; list-style: none; position: relative; width: 591px;">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div style="float: left; list-style: none; position: relative; width: 591px;">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div style="float: left; list-style: none; position: relative; width: 591px;">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div style="float: left; list-style: none; position: relative; width: 591px;" class="bx-clone">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="https://www.stone-m.com/sp/img/index/brand/shop16.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="bx-controls bx-has-pager bx-has-controls-direction">
-                        <div class="bx-pager bx-default-pager">
-                            <div class="bx-pager-item">
-                                <a href="" data-slide-index="0" class="bx-pager-link">1</a>
-                            </div>
-                            <div class="bx-pager-item">
-                                <a href="" data-slide-index="1" class="bx-pager-link active">2</a>
-                            </div>
-                            <div class="bx-pager-item">
-                                <a href="" data-slide-index="2" class="bx-pager-link">3</a>
-                            </div>
-                        </div>
-                        <div class="bx-controls-direction">
-                            <a class="bx-prev" href="">Prev</a>
-                            <a class="bx-next" href="">Next</a>
-                        </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../img/brand.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/brand.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/brand.png" class="d-block w-100" alt="">
+                      </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
+
+
             <div id="video">
-                <h3>
+                <h3 class="section-title">
+                    <i class="bi bi-tv-fill text-warning"></i>
                     <span>ストーンマーケットTV</span>
-                    <div class="fRight" style="margin-top:5px">
-                        <a href="" target="_blank">
-                            <img src="https://www.stone-m.com/sp/img/index/tolist.png" width="60">
-                        </a>
+                    <div class="fRight">
+                        <a href="#" target="_blank">一覧へ<i class="bi bi-chevron-right" style="margin-left: 5px;"></i></a>
                     </div>
                 </h3>
                 <div id="video_inner">
-                    <h4 style="text-align:left">
-                        <!--<span>Garden Party</span>-->
-                    </h4>
                     <p class="youtube">
                         <iframe style="text-align:center;" width="" height="" src="" frameborder="0">
                             <img src="">
@@ -431,87 +305,79 @@
                     </p>
                 </div>
             </div>
+    
             <div id="syoseki">
-                <h3>
-                    <span>
-                        <a href="/bookintroduction/">書籍紹介</a>
-                    </span>
+                <h3 class="section-title">
+                    <i class="bi bi-book-fill ms-1"></i>
+                    <span>書籍紹介</span>
                 </h3>
-                <p class="booklist">
-                    <a href="" target="_blank">WE LOVE STONE MARKET</a>
-                </p>
-                <p class="booklist">
-                    <a href="" target="_blank">幸せを呼ぶパワーストーン</a>
-                </p>
-                <p class="booklist">
-                    <a href="" target="_blank">どん底からの起業術</a>
-                </p>
-                <p class="booklist">
-                    <a href="" target="_blank">成功の原石</a>
-                </p>
+                <ul class="booklist">
+                    <li><a href="" target="_blank">WE LOVE STONE MARKET</a></li>
+                    <li><a href="" target="_blank">幸せを呼ぶパワーストーン</a></li>
+                    <li><a href="" target="_blank">どん底からの起業術</a></li>
+                    <li><a href="" target="_blank">成功の原石</a></li>
+                </ul>   
             </div>
+    
             <div class="cs">
-                <a href="">
-                    <img src="https://www.stone-m.com/sp/img/bn_cs.png" alt="お客様満足度向上への取り組み" width="100%">
+                <a href="" class="container">
+                    <img src="../img/cs.jpg" alt="お客様満足度向上への取り組み">
+                    <div class="cs-text">お客様満足度向上への取り組み</div>
                 </a>
             </div>
+    
+            <div class="bottom">
+                <a class="btn" href="#top" role="button">ページTOPに戻る</a>
+            </div>
+    
             <div id="modal">
-                <h2>
-                    <a href="" class="icon-bullhorn">HOME</a>
-                </h2>
-                <nav>
-                    <ul>
-                        <li><a href="" class="icon-bullhorn">ニュース</a></li>
-                        <li><a href="" class="icon-feather">パワーストーンファイル</a></li>
-                        <li><a href="" class="icon-chart-pie">店舗検索</a></li>
-                        <li><a href="" class="icon-cart">店舗サービス案内</a></li>
-                        <li><a href="" alt="ストーンマーケットについて">ストーンマーケットについて</a></li>
-                        <li><a href="" alt="お手入れ・浄化方法">お手入れ・浄化方法</a></li>
-                        <li><a href="" class="icon-upload">オンラインショップ</a></li>
-                        <li><a href="" alt="会社概要">会社概要</a></li>
-                        <li><a href="" alt="採用情報">採用情報</a></li>
-                        <li><a href="" alt="お問い合せ">お問い合わせ</a></li>
-                        <li class="close"><a href="javascript:$.pageslide.close()" class="icon-cancel-squared">メニューを閉じる</a></li>
-                    </ul>
-                </nav>
+                <h3 class="section-title">
+                    <i class="bi bi-list text-warning"></i>
+                   
+                    <span>MENU</span>
+                </h3>
+                <ul class="menu01">
+                    <li>
+                        <a href="./news.html">ニュース</a>
+                    </li>
+                    <li>
+                        <a href="./file.html">パワーストーンファイル</a>
+                    </li>
+                    <li>
+                        <a href="./search-shop.html/">店舗検索</a>
+                    </li>
+                    <li>
+                        <a href="./service.html">店舗サービス案内</a>
+                    </li>
+                    <li>
+                        <a href="">ストーンマーケットについて</a>
+                    </li>
+                    <li>
+                        <a href="">オンラインショップ</a>
+                    </li>
+                </ul>
             </div>
-            
-            <script type="text/javascript" src="js/jquery.pageslide.min.js"></script>
-            <script>
-            $(".first").pageslide();
-            $(".second").pageslide({ direction: "left", modal: true });
-            </script>
-            
-            <p align="right" class="pagetop">
-                <a href="javascript:void(0)" class="scroll" rel="https://www.stone-m.com/sp/#wrapper">
-                    <img src="https://www.stone-m.com/sp/img/top_icon.png" width="90" alt="ページトップへ">
-                </a>
-            </p>
-
         </section>
 
-        <article>
-            <footer id="footer">
-                <div style="height: 5px;"></div>
-                <section class="address minchou">
-                    <a href="" alt="会社概要">会社概要</a><span>｜</span>
-                    <a href="" alt="採用情報">採用情報</a><span>｜</span>
-                    <a href="" alt="お問い合わせ">お問い合わせ</a><br>
-                    <a href="" alt="衣装協力・リース">衣装協力･リースについて</a>
-                </section>
-                <section class="address minchou">
-                    <p>表示　スマートフォン ： 
-                        <a href="">PC</a>
-                    </p>
-                </section>
-                <p class=" otherlan">Other languages, PC site only.</p>
-                <p class="copyright">©  STONE MARKET CO.,LTD. ALL RIGHTS RESERVED. <br>STONE MARKET（ストーンマーケット）は、登録商標です。</p>
-            </footer>
-            <!-- <script src="/js/popup.js" type="text/javascript"></script> -->		
-        </article>
+        <footer id="footer">
+            <section class="address minchou">
+                <a href="" alt="会社概要">会社概要</a><span>｜</span>
+                <a href="" alt="採用情報">採用情報</a><span>｜</span>
+                <a href="" alt="お問い合わせ">お問い合わせ</a><br>
+                <a href="" alt="衣装協力・リース">衣装協力･リースについて</a>
+            </section>
+            <section class="address minchou">
+                <p style="margin: 0;">表示　スマートフォン ： 
+                    <a href="">PC</a>
+                </p>
+            </section>
+            <p class="otherlan">Other languages, PC site only.</p>
+            <p class="copyright">©  ○○ <br>○○は、登録商標です。</p>
+        </footer>
     </div>
-    <div id="pageslide" style="display: none;"></div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 </html>

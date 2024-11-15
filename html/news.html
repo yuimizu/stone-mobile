@@ -3,317 +3,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/news.css">
 </head>
 
 <body class="">
-    <div id="headerbar-menu">
+    <div id="wrapper">
         <header id="header">
             <h1>
-                <a href="https://www.stone-m.com/news/../sp/"><img src="/sp/img/logo_new.png" alt="ストーンマーケット" width="170"></a>
+                <a href="" style="width:170;">ロゴ</a>
             </h1>
-            <p id="nav_btn">
-                <a href="#modal" class="first">
-                    <img src="/sp/img/menu.png" width="50" height="" alt="menu">
-                </a>
-            </p>
+    
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header" style="padding-left: 0;">
+                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="home.html">MENU</a></h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" style="padding: 0;">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item"><a href="./news.html" class="nav-link">ニュース</a></li>
+                                <li class="nav-item"><a href="./file.html" class="nav-link">パワーストーンファイル</a></li>
+                                <li class="nav-item"><a href="./search-shop.html" class="nav-link">店舗検索</a></li>
+                                <li class="nav-item"><a href="./service.html" class="nav-link">店舗サービス案内</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">ストーンマーケットについて</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">オンラインショップ</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">会社概要</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">採用情報</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">お問い合わせ</a></li>  
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-    </div>
-    <div id="drop-fade">
-        <!-- #start the Prowl Message Area -->
-         <div id="prowl-message" style="display:none">
-            <div id="push-style-bar"></div>
-            <!-- filler to get the styling just right -->
-             <img src="http://www.stone-m.com/news/wp-content/plugins/wptouch/themes/core/core-images/push-icon.png" alt="push icon">
-             <h4>メッセージを送信</h4>
-             <p>このメッセージは、管理者のiPhoneへ直ちにプッシュされます。</p>
-             <form id="prowl-direct-message" method="post" action="/news/">
-                <p>
-                    <input name="prowl-msg-name" id="prowl-msg-name" type="text">
-                    <label for="prowl-msg-name">名前</label>
-                </p>
-                <p>
-                    <input name="prowl-msg-email" id="prowl-msg-email" type="text">
-                    <label for="prowl-msg-email">E-Mail</label>
-                </p>
-                <textarea name="prowl-msg-message"></textarea>
-                <input type="hidden" name="wptouch-prowl-message" value="1"> 
-                <input type="hidden" name="_nonce" value="b49cfe3c47">			
-                <input type="submit" name="prowl-submit" value="送信" id="prowl-submit">
-            </form>
-            <div class="clearer"></div>
-        </div>
-    </div>
-    <div id="modal">
-        <h2><a href="/sp/" class="icon-bullhorn">HOME</a></h2>
-        <nav>
-            <ul>
-                <li><a href="./news.html" class="icon-bullhorn">ニュース</a></li>
-                <li><a href="" class="icon-feather">パワーストーンファイル</a></li>
-                <li><a href="/sp/shop/" class="icon-chart-pie">店舗検索</a></li>
-                <li><a href="/sp/service.html" class="icon-cart">店舗サービス案内</a></li>
-                <li><a href="/sp/about.php" class="icon-cart">ストーンマーケットについて</a></li>
-                <li><a href="https://onlineshop.stone-m.com/" class="icon-upload">オンラインショップ</a></li>
-                <li><a href="/sp/overview.php" alt="会社概要">会社概要</a></li>
-                <li><a href="/sp/recruit.php" alt="採用情報">採用情報</a></li>
-                <li><a href="https://www.stone-m.com/sp/contact/" alt="お問い合せ">お問い合わせ</a></li>
-                <li class="close"><a href="javascript:jQuery.pageslide.close()" class="icon-cancel-squared">メニューを閉じる</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content" id="content0144d13ca63bef8f74c84789c6e77d31">
-        <div class="result-text"></div>
-        <div class="post" id="post-14850">
-            <a class="post-arrow" id="arrow-14850" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-11">11月</div>
-                <div class="cal-date">2</div>
-            </div>				
-            <a class="h2" href="">11月誕生石✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14850" style="display:none" class="mainentry left-justified">
-                <p>11月お誕生日の方おめでとうございます！<br>
-                    今月はこの2種類2種類♪
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14842">
-            <a class="post-arrow" id="arrow-14842" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-10">10月</div>
-                <div class="cal-date">26</div>
-            </div>				
-            <a class="h2" href="">11月開運日</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14842" style="display:none" class="mainentry left-justified">
-                <p>11月の開運日です♪<br>
-                    皆さん体調にはきをつけて冬も楽しみましょうね✨
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14833">
-            <a class="post-arrow" id="arrow-14833" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-10">10月</div>
-                <div class="cal-date">19</div>
-            </div>				
-            <a class="h2" href="">パワーストーンどう選ぶ？✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14833" style="display:none" class="mainentry left-justified">
-                <p>寒くなってくるとちょっぴりメンタルもぶれやすい時期！<br>
-                    深い深呼吸をしてリラックスする時間をつくりましょう～♪
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14826">
-            <a class="post-arrow" id="arrow-14826" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-10">10月</div>
-                <div class="cal-date">12</div>
-            </div>				
-            <a class="h2" href="">10月誕生石✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14826" style="display:none" class="mainentry left-justified">
-                <p>すっかり風が寒くなってきましたね<br>
-                    皆さん体調は大丈夫ですか？<br>
-                    10月の誕生石は恋愛運が上がりそうな石もありますね✨
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14818">
-            <a class="post-arrow" id="arrow-14818" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-09">9月</div>
-                <div class="cal-date">21</div>
-            </div>				
-            <a class="h2" href="">天然石の選び方？</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14818" style="display:none" class="mainentry left-justified">
-                <p>天然石ってどうやって選べばいい？<br>
-                    プレゼントに送りたい！<br>
-                    もちろん直感でえ選ぶのも〇✨
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14809">
-            <a class="post-arrow" id="arrow-14809" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-09">9月</div>
-                <div class="cal-date">14</div>
-            </div>				
-            <a class="h2" href="">ラリマーの魅力♪</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14809" style="display:none" class="mainentry left-justified">
-                <p>癒しの石ラリマー✨<br>
-                    海を連想させる水色に心も洗われそうですよ♪
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14801">
-            <a class="post-arrow" id="arrow-14801" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-09">9月</div>
-                <div class="cal-date">7</div>
-            </div>				
-            <a class="h2" href="">アメジストの魅力しってる？✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14801" style="display:none" class="mainentry left-justified">
-                <p>リラックスや快眠と言えば？アメジストが人気ですよね！<br>
-                    パープルの魅力にはまっちゃう～✨
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14792">
-            <a class="post-arrow" id="arrow-14792" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-08">8月</div>
-                <div class="cal-date">31</div>
-            </div>				
-            <a class="h2" href="">9月開運カレンダー✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14792" style="display:none" class="mainentry left-justified">
-                <p>暦上ではもう秋ですね♪<br>
-                    まだまだ暑い日は続きそうですが<br>
-                    アクセサリーで秋色ストーンなんていかがですか？
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14786">
-            <a class="post-arrow" id="arrow-14786" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-08">8月</div>
-                <div class="cal-date">24</div>
-            </div>				
-            <a class="h2" href="">浪費癖が治る⁉✨✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14786" style="display:none" class="mainentry left-justified">
-                <p>夏は楽しみが沢山！<br>
-                    ついついお金を使いすぎてしまいますよね<br>
-                    そんな時はかわりにしっかりお財布の紐を握っていてもらいましょう！！
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div class="post" id="post-14778">
-            <a class="post-arrow" id="arrow-14778" href="javascript: return false;"></a>
-            <div class="calendar">
-                <div class="cal-month month-08">8月</div>
-                <div class="cal-date">17</div>
-            </div>				
-            <a class="h2" href="">今後価値が上がる石⁉✨✨</a>
-            <div class="post-author"></div>	
-            <div class="clearer"></div>	
-            <div id="entry-14778" style="display:none" class="mainentry left-justified">
-                <p>今後今以上に価値が上がっていく天然石って知ってますか？<br>
-                    皆さんは持っているものはありましたか？♪
-                </p>
-                <a class="read-more" href="">この投稿を読む</a>
-            </div>  
-        </div>
-        <div id="call0144d13ca63bef8f74c84789c6e77d31" class="ajax-load-more">
-            <div id="spinner0144d13ca63bef8f74c84789c6e77d31" class="spin" style="display:none"></div>
-            <div align="center">
-                <a class="ajax" href="javascript:return false;" onclick="$wpt('#spinner0144d13ca63bef8f74c84789c6e77d31').fadeIn(200); $wpt('#ajaxentries0144d13ca63bef8f74c84789c6e77d31').load('https://www.stone-m.com/news/page/2/', {}, function(){ $wpt('#call0144d13ca63bef8f74c84789c6e77d31').fadeOut();});">
-                    <img src="/sp/img/readmore.png" width="60%" height="" alt="Loadmoreentries">
-                </a>
+        
+        <div class="content" id="content0144d13ca63bef8f74c84789c6e77d31">
+            <div class="result-text"></div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="calendar">
+                            <div class="cal-month month-11">11月</div>
+                            <div class="cal-date">2</div>
+                        </div>				
+                        <a class="h2" href="">11月誕生石✨</a>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>11月お誕生日の方おめでとうございます！<br>
+                            今月はこの2種類2種類♪
+                        </p>
+                        <a class="read-more" href="">この投稿を読む</a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="calendar">
+                            <div class="cal-month month-10">10月</div>
+                            <div class="cal-date">26</div>
+                        </div>				
+                        <a class="h2" href="">11月開運日</a>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>11月の開運日です♪<br>
+                            皆さん体調にはきをつけて冬も楽しみましょうね✨
+                        </p>
+                        <a class="read-more" href="">この投稿を読む</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="calendar">
+                            <div class="cal-month month-10">10月</div>
+                            <div class="cal-date">19</div>
+                        </div>				
+                        <a class="h2" href="">パワーストーンどう選ぶ？✨</a>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>寒くなってくるとちょっぴりメンタルもぶれやすい時期！<br>
+                            深い深呼吸をしてリラックスする時間をつくりましょう～♪
+                        </p>
+                        <a class="read-more" href="">この投稿を読む</a>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
-        <div id="ajaxentries0144d13ca63bef8f74c84789c6e77d31"></div>
-    </div>
-        <!-- #End post -->
-         <!-- Here we're establishing whether the page was loaded via Ajax or not, for dynamic purposes. If it's ajax, we're not bringing in footer.php -->
-          <script type="text/javascript" src="../../sp/js/jquery.pageslide.min.js"></script>
-          <script>
-          jQuery(".first").pageslide();
-          jQuery(".second").pageslide({ direction: "left", modal: true });
-          </script>
-          <p align="right" class="pagetop" style="padding-right:7px">
-            <a href="#wrapper" class="scroll">
-                <img src="/sp/img/top_icon.png" width="90" alt="ページトップへ">
-            </a>
-          </p>
-        <!--<link rel="stylesheet" href="http://www.stone-m.com/sp/css/common.css" type="text/css">
-        <link rel="stylesheet" href="http://www.stone-m.com/sp/css/index.css" type="text/css">-->
+
+        <div class="btn2">
+            <a href="#">もっと読む</a>
+        </div>
+
+        <div class="bottom">
+            <a class="btn" href="#top" role="button">ページTOPに戻る</a>
+        </div>
+
         <div class="mt30 mb20 clearfix social">
-            <div class="social1">
-                <img src="http://www.stone-m.com/sp/img/sps_ttl.png">
-            </div>
+            <h2 class="heading-1">○○マーケット<br>公式SNSアカウント</h2>
             <div class="social2">
-                <a href="https://www.facebook.com/STONEMARKET.Co.Ltd" target="_blank" style="color:white;">
-                    <img src="http://www.stone-m.com/sp/img/sps_01.png">
+                <a href="" target="_blank">
+                    <i class="bi bi-facebook"></i>
                 </a>
             </div>
             <div class="social2">
-                <a href="https://twitter.com/stonemarket" target="_blank" style="color:white;">
-                    <img src="http://www.stone-m.com/sp/img/sps_02.png">
+                <a href="" target="_blank">
+                    <i class="bi bi-twitter-x"></i> 
                 </a>
             </div>
             <div class="social2">
-                <a href="https://www.instagram.com/stonemarket_official/" target="_blank" style="color:white;">
-                    <img src="http://www.stone-m.com/sp/img/sps_03.png">
+                <a href="" target="_blank">
+                    <i class="bi bi-instagram"></i> 
                 </a>
             </div>
             <div class="social3">
-                <a href="https://page.line.me/stonemarket" target="_blank" style="color:white;">
-                    <img src="http://www.stone-m.com/sp/img/sps_04.png">
+                <a href="" target="_blank">
+                    <i class="bi bi-line"></i>
                 </a>
             </div>
         </div>
-        <ul class="menu01 clearfix">
-            <h2 class="tit01">MENU</h2>
-            <li>
-                <a href="">ニュース</a>
-            </li>
-            <li>
-                <a href="">パワーストーンファイル</a>
-            </li>
-            <li>
-                <a href="">店舗検索</a>
-            </li>
-            <li>
-                <a href="">店舗サービス案内</a>
-            </li>
-            <li>
-                <a href="">ストーンマーケットについて</a>
-            </li>
-            <li>
-                <a href="">オンラインショップ</a>
-            </li>
-        </ul>
+
+        <div id="modal">
+            <h3 class="section-title">
+                <i class="bi bi-list text-warning"></i>
+               
+                <span>MENU</span>
+            </h3>
+            <ul class="menu01">
+                <li>
+                    <a href="./news.html">ニュース</a>
+                </li>
+                <li>
+                    <a href="./file.html">パワーストーンファイル</a>
+                </li>
+                <li>
+                    <a href="./search-shop.html">店舗検索</a>
+                </li>
+                <li>
+                    <a href="./service.html">店舗サービス案内</a>
+                </li>
+                <li>
+                    <a href="">ストーンマーケットについて</a>
+                </li>
+                <li>
+                    <a href="">オンラインショップ</a>
+                </li>
+            </ul>
+        </div>
+
         <footer id="footer">
-            <div style="height: 5px;"></div>
             <section class="address minchou">
-                <a href="/sp/overview.php" alt="会社概要">会社概要</a><span>｜</span>
-                <a href="/sp/recruit.php" alt="採用情報">採用情報</a><span>｜</span>
-                <a href="{$_topHttpsUrl}contact/" alt="お問い合わせ">お問い合わせ</a><br>
-                <a href="/sp/lease.php" alt="衣装協力・リース">衣装協力･リースについて</a>
+                <a href="" alt="会社概要">会社概要</a><span>｜</span>
+                <a href="" alt="採用情報">採用情報</a><span>｜</span>
+                <a href="" alt="お問い合わせ">お問い合わせ</a><br>
+                <a href="" alt="衣装協力・リース">衣装協力･リースについて</a>
             </section>
             <section class="address minchou">
-                <p>表示　スマートフォン ： <a href="http://www.stone-m.com/sp/jamp_pc.php">PC</a></p>
+                <p style="margin: 0;">表示　スマートフォン ： 
+                    <a href="">PC</a>
+                </p>
             </section>
-            <p class=" otherlan">Other languages, PC site only.</p>
-            <p class="copyright">© STONE MARKET CO.,LTD. ALL RIGHTS RESERVED. <br>STONE MARKET（ストーンマーケット）は、登録商標です。</p>
+            <p class="otherlan">Other languages, PC site only.</p>
+            <p class="copyright">©  ○○ <br>○○は、登録商標です。</p>
         </footer>
+    </div>
         
-        <div id="pageslide" style="display: none;"></div>
-        <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fwww.stone-m.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
