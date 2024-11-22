@@ -98,22 +98,7 @@ a.h2 {
 	box-sizing: border-box;
 }
 
-.clearfix{
-    border-bottom: none;
-}
 
-.heading-1 {
-    display: inline-block;
-    padding: .5em .7em;
-    border-radius: 50px 0 0 50px;
-    background-color: #e5c10b;
-    color: #fff;
-    width: 44%;
-    margin-right: 2%;
-    font-size: 10px;
-}
 
-.social2{
-    width: 30px;
-}
+
 

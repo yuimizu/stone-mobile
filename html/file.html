@@ -23,7 +23,7 @@
                     </button>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header" style="padding-left: 0;">
-                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="home.html">MENU</a></h2>
+                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="home.html">HOME</a></h2>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body" style="padding: 0;">
@@ -33,10 +33,10 @@
                                 <li class="nav-item"><a href="./search-shop.html" class="nav-link">店舗検索</a></li>
                                 <li class="nav-item"><a href="./service.html" class="nav-link">店舗サービス案内</a></li>
                                 <li class="nav-item"><a href="./about.html" class="nav-link">について</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">オンラインショップ</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">会社概要</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">採用情報</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">お問い合わせ</a></li>  
+                                <li class="nav-item"><a href="./online-shop.html" class="nav-link">オンラインショップ</a></li>
+                                <li class="nav-item"><a href="./company.html" class="nav-link">会社概要</a></li>
+                                <li class="nav-item"><a href="./recruitment.html" class="nav-link">採用情報</a></li>
+                                <li class="nav-item"><a href="./inquiry.html" class="nav-link">お問い合わせ</a></li>  
                             </ul>
                         </div>
                     </div>
@@ -44,10 +44,8 @@
             </nav>
         </header>
 
-        <section id="content" class="stone">
-            <h2 class="title">
-                パワーストーンファイル
-            </h2>
+        <div id="content" class="stone">
+            <h2 class="common-title">パワーストーンファイル</h2>
             <ul class="search">
                 <li><a href="">石名（50音順）で探す</a></li>
                 <li><a href="">効果で選ぶ</a></li>
@@ -56,23 +54,25 @@
                 <li><a href="">誕生守護石から選ぶ</a></li>
                 <li class="B_none mb0">フリーワードで探す</li>
             </ul>
-            <form name="frmSearch" method="post" action="list.php">
-                <label for="txt"></label>
-                <input type="text" name="freeword" id="txt" width="100%">
-                <a href="javascript:void(0);" onclick="document.frmSearch.submit();">
-                    <img src="img/stone/void(0).jpg" width="48" height="22" alt="検索する">
-                </a>	
+
+            <form method="get" action="#" class="search_container">
+                <input type="text" size="25">
+                <input type="submit" value="検索">
             </form>
+            
             <div class="bikou_n bikou_n_top">
                 ※意味や効果は、当社の独自調査に基づいた内容を掲載しており、<br>
                 科学的に実証・保証されておりません。一例としてご覧下さい。
             </div>
-            <div class="bottom">
-                <a class="btn" href="#top" role="button">ページTOPに戻る</a>
-            </div>
-    
-            <div class="mt30 mb20 clearfix social">
-                <h2 class="heading-1">○○マーケット<br>公式SNSアカウント</h2>
+        </div>
+
+        <div class="bottom" >
+            <a id="page-top" href="#top" role="button">Topへ戻る</a>
+        </div>
+
+        <div class="social">
+            <div class="heading-1">公式SNSアカウント</div>
+            <div class="flex2">
                 <div class="social2">
                     <a href="" target="_blank">
                         <i class="bi bi-facebook"></i>
@@ -88,48 +88,48 @@
                         <i class="bi bi-instagram"></i> 
                     </a>
                 </div>
-                <div class="social3">
+                <div class="social2">
                     <a href="" target="_blank">
                         <i class="bi bi-line"></i>
                     </a>
                 </div>
-            </div>
-    
-            <div id="modal">
-                <h3 class="section-title">
-                    <i class="bi bi-list text-warning"></i>
-                   
-                    <span>MENU</span>
-                </h3>
-                <ul class="menu01">
-                    <li>
-                        <a href="./news.html">ニュース</a>
-                    </li>
-                    <li>
-                        <a href="./file.html">ファイル</a>
-                    </li>
-                    <li>
-                        <a href="./search-shop.html">店舗検索</a>
-                    </li>
-                    <li>
-                        <a href="./service.html">店舗サービス案内</a>
-                    </li>
-                    <li>
-                        <a href="./about/html">について</a>
-                    </li>
-                    <li>
-                        <a href="">オンラインショップ</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+            </div> 
+        </div>
+        
+        <div id="modal">
+            <h3 class="section-title">
+                <i class="bi bi-list text-warning"></i>
+               
+                <span>MENU</span>
+            </h3>
+            <ul class="menu01">
+                <li>
+                    <a href="./news.html">ニュース</a>
+                </li>
+                <li>
+                    <a href="./file.html">ファイル</a>
+                </li>
+                <li>
+                    <a href="./search-shop.html">店舗検索</a>
+                </li>
+                <li>
+                    <a href="./service.html">店舗サービス案内</a>
+                </li>
+                <li>
+                    <a href="./about/html">について</a>
+                </li>
+                <li>
+                    <a href="./onlin-shop.html">オンラインショップ</a>
+                </li>
+            </ul>
+        </div>
+        
         <footer id="footer">
             <section class="address minchou">
-                <a href="" alt="会社概要">会社概要</a><span>｜</span>
-                <a href="" alt="採用情報">採用情報</a><span>｜</span>
-                <a href="" alt="お問い合わせ">お問い合わせ</a><br>
-                <a href="" alt="衣装協力・リース">衣装協力･リースについて</a>
+                <a href="./company.html" alt="会社概要">会社概要</a><span>｜</span>
+                <a href="./recruitment.html" alt="採用情報">採用情報</a><span>｜</span>
+                <a href="./inquiry.html" alt="お問い合わせ">お問い合わせ</a><br>
+                <a href="./lease.html" alt="衣装協力・リース">衣装協力･リースについて</a>
             </section>
             <section class="address minchou">
                 <p style="margin: 0;">表示　スマートフォン ： 
@@ -140,7 +140,6 @@
             <p class="copyright">©  ○○ <br>○○は、登録商標です。</p>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

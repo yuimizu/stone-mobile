@@ -1,0 +1,92 @@
+#members_card {
+    margin: 0 2%;
+    font-size: 87%;
+    text-align: start;
+}
+
+.box {
+    margin-bottom: 3px;
+}
+
+.box_area{
+    border-bottom: 1px dotted;
+    margin-bottom: 20px;
+}
+
+.servicename {
+    border-left: 3px solid #764C24;
+    margin: 10px 0;
+    padding: 0 0 0 4px;
+    font-size: medium;
+}
+
+.service ul{
+    padding: 0;
+}
+
+.service dl.noline {
+    border-top: 1px solid #FFFFD2;
+    margin: 5px 0;
+}
+
+.service dl dt {
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+.service .button-brown {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    border-bottom: 1px solid #A7824F;
+}
+
+.service .button-brown a {
+    display: block;
+    cursor: pointer;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    background-color: #A7824F;
+}
+
+.service dl dd {
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.text2 {
+    margin-bottom: 8px;
+}
+
+.info_toroku {
+    width: 96%;
+    margin: 20px 0;
+    padding: 5px;
+    border: #aaa 1px solid;
+}
+
+.service ul li span {
+    font-weight: bold;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.point{
+    color: #F63;
+}
+
+.service dl {
+    border-top: 1px solid #DCD189;
+    margin: 5px 0;
+}
+
+.box img{
+    width: 360px;
+    height: 330px;
+}

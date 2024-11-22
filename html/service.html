@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service.css">
 </head>
-
-<body>
+<body id="top">
     <div id="wrapper">
         <header id="header">
             <h1>
@@ -23,7 +23,7 @@
                     </button>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header" style="padding-left: 0;">
-                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="home.html">MENU</a></h2>
+                            <h2 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="home.html">HOME</a></h2>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body" style="padding: 0;">
@@ -33,10 +33,10 @@
                                 <li class="nav-item"><a href="./search-shop.html" class="nav-link">店舗検索</a></li>
                                 <li class="nav-item"><a href="./service.html" class="nav-link">店舗サービス案内</a></li>
                                 <li class="nav-item"><a href="./about.html" class="nav-link">について</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">オンラインショップ</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">会社概要</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">採用情報</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">お問い合わせ</a></li>  
+                                <li class="nav-item"><a href="./online-shop.html" class="nav-link">オンラインショップ</a></li>
+                                <li class="nav-item"><a href="./company.html" class="nav-link">会社概要</a></li>
+                                <li class="nav-item"><a href="./recruitment.html" class="nav-link">採用情報</a></li>
+                                <li class="nav-item"><a href="./inquiry.html" class="nav-link">お問い合わせ</a></li>  
                             </ul>
                         </div>
                     </div>
@@ -44,183 +44,196 @@
             </nav>
         </header>
 
-        <section id="content">
-            <h2 class="title">店舗サービス案内</h2>
-            <section class="box clearfix service" id="members_card">
-      
-              <section class="box clearfix">
-                <section class="box_area">
-                  <p class="servicename">プレミアム会員サービス</p>
-                  <section>
-                    <ul class="sma" style="margin-bottom:5px">
-                      <li>お得な「会員サービス」をご用意しております。各種店舗、オンラインショップにて、ご利用可能です。</li>
-                      <li>ポイントを貯めて使える「ポイントプログラム」や欲しい情報をアプリで簡単に確認・最新情報をメールマガジン配信・などをご用意しております。</li>
-                      <li>
-                        <dl class="tokuten noline">
-                          <dt>
-                            <p class="button-brown"><a href="" target="_blank">新規入会の方はこちら</a></p>
-                            <p class="button-brown"><a href="" target="_blank">プレミアム会員の方はこちら</a></p>
-                            <p style="margin:0">
-                              ※スタンダード会員サービスは2023年1月30日で終了致しました。
-                            </p>
-                          </dt>
-                          <br>
-                          <dd class="text2" style="margin-left:-15px">
-                            <span style="font-weight:normal;color:#000000">＜プレミアム会員特典のご案内＞<br>
-                                登録いただいた全てのお客様は「プレミアム会員」のサービスを準備しております。ご登録をいただくと以下の特典をご準備しております。
-                            </span>
-                          </dd>
-                          <dd style="margin-left:-20px">【特典1】ポイント有効期限延長（3ヵ月⇒12ヵ月）</dd>
-                          <dd style="margin-left:-20px">【特典2】ご登録後100ポイントプレゼント</dd>
-                          <dd style="margin-left:-20px">【特典3】お得情報メールマガジン配信</dd>
+        <div id="content">
+            <h2 class="common-title">店舗サービス案内</h2>
+            <div class="service" id="members_card">
+        <div class="box">
+                    <div class="box_area">
+                        <p class="servicename">プレミアム会員サービス</p>
+                        <ul class="sma" style="margin-bottom:5px">
+                            <li>お得な「会員サービス」をご用意しております。各種店舗、オンラインショップにて、ご利用可能です。</li>
+                            <li>ポイントを貯めて使える「ポイントプログラム」や欲しい情報をアプリで簡単に確認・最新情報をメールマガジン配信・などをご用意しております。</li>
+                            <li>
+                                <dl class="tokuten noline">
+                                    <dt>
+                                    <p class="button-brown"><a href="" target="_blank">新規入会の方はこちら</a></p>
+                                    <p class="button-brown"><a href="" target="_blank">プレミアム会員の方はこちら</a></p>
+                                    <p style="margin:0">※スタンダード会員サービスは2023年1月30日で終了致しました。</p>
+                                    </dt>
+                                    <br>
+                                    <dd class="text2" style="margin-left:-15px">
+                                        <span style="font-weight:normal;color:#000000">＜プレミアム会員特典のご案内＞<br>
+                                            登録いただいた全てのお客様は「プレミアム会員」のサービスを準備しております。ご登録をいただくと以下の特典をご準備しております。
+                                        </span>
+                                    </dd>
+                                    <dd style="margin-left:-20px">【特典1】ポイント有効期限延長（3ヵ月⇒12ヵ月）</dd>
+                                    <dd style="margin-left:-20px">【特典2】ご登録後100ポイントプレゼント</dd>
+                                    <dd style="margin-left:-20px">【特典3】お得情報メールマガジン配信</dd>
+                                </dl>
+                                <div class="info_toroku">
+                                    <p style="padding-top:5px">
+                                        <span class="red bold" style="color:#FF0000;">【重要なお知らせ】スタンダード会員サービスご利用のお客様へ</span>
+                                    </p>
+                                    <p>2023年1月以降、会員サービス変更に伴い。スタンダード会員サービスは終了致しました。 </p>
+                                </div>
+                            </li>
+                            <li class="mt10"><span style="color:#3E1F11">＜プレミアム会員の詳細情報＞</span></li>
+                            <li class="mt10 point"><span>●貯まる　200円(税抜)につき→1ポイント</span></li>
+                            <li class="point"><span>●使える　1ポイント→1円分</span></li>
+                        </ul>
+                        <dl>
+                            <dt>発行手数料</dt>
+                            <dd>無料</dd>
                         </dl>
-                        <div class="info_toroku">
-                            <p style="padding-top:5px">
-                                <span class="red bold" style="color:#FF0000;">【重要なお知らせ】スタンダード会員サービスご利用のお客様へ</span>
-                            </p>
-                            <p>2023年1月以降、会員サービス変更に伴い。スタンダード会員サービスは終了致しました。 </p>
-                        </div>
-                    </li>
-                      <li class="mt10"><span style="color:#3E1F11">＜プレミアム会員の詳細情報＞</span></li>
-                      <li class="mt10"><span>●貯まる　200円(税抜)につき→1ポイント</span></li>
-                      <li><span>●使える　1ポイント→1円分</span></li>
-                    </ul>
-                    <dl>
-                      <dt>発行手数料</dt>
-                      <dd>無料</dd>
-                    </dl>
-                    <dl>
-                      <dt>年会費</dt>
-                      <dd>無料</dd>
-                    </dl>
-                    <dl>
-                      <dt>ご利用可能店舗</dt>
-                      <dd>STONE MARKET各種店舗</dd>
-                    </dl>
-                    <dl>
-                      <dt>会員種別</dt>
-                      <dd>プレミアム会員</dd>
-                    </dl>
-                    <dl>
-                      <dt>ポイント有効期限</dt>
-                      <dd>
-                        【プレミアム会員】ポイント最終更新日の翌月から、12ヶ月間利用が無い場合、自動的に全ポイントが失効
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>ポイントが貯まる対象</dt>
-                      <dd>税抜、値引後の金額</dd>
-                    </dl>
-                    <dl>
-                      <dt>ご利用方法</dt>
-                      <dd>
-                        お会計前にアプリ会員証をスタッフにお渡しください。<br>
-                        ※ご購入時のみ、ポイントを付与します。お忘れの場合、後日の付与はできません。
-                      </dd>
-                    </dl>
-                    <p class="info">※2023年1月よりオンラインショップでもご利用頂けるようになりました</p>
-                    <br>
-                  </section>
-                </section>
-      
-              </section>
-      
-              <section class="box clearfix">
-                <section class="box_area">
-                  <p class="servicename">お作りコーナー</p>
-                  <section>
-                    <ul>
-                      <li><img src="img/service/ph04.jpg" width="100%" alt="お作りコーナー"></li><br>
-                      <li>
-                        お好きな天然石を使用して、ブレスレットやストラップなど、世界にひとつだけのオリジナルアクセサリー作成を承っております。
-                        スタッフが心を込めて、お作りいたします。<br>
-                        <br>
-                        店内にはお作りコーナーがございますので、お気軽にお声かけください。一度お作りいただいたアクセサリーは、各店でメンテナンスを承ります。<br>
-                        <br>
-                        ※一部店舗にてお作りコーナーを設けていない場合もございますが、お作り可能な場合もありますので、ご希望の店舗までお問い合わせください。
-                      </li>
-                    </ul>
-                  </section>
-                </section>
-              </section>
-      
-              
-      
-              <section class="box clearfix">
-                <section class="box_area">
-                  <p class="servicename">刻印</p>
-                  <section>
-                    <p><img src="img/service/ph_seal.jpg" width="100%" alt="刻印"></p><br>
-                    <dl class="noline">
-                      <dt>各店にて、お承ります。</dt><br>
-                      <dd>リング・・・500円(税抜)</dd>
-                      <dd>プレート型トップ・・・片面 800円(税抜)</dd>
-                    </dl>
-                    <br>
-                    <p class="mb10">納期は、リングは即日、プレート型トップは約2週間程度となっております。</p>
-                    <p class="mb20" style="display:inline-block"> ※デザインにより刻印の難しいものもございます。<br>
-                      ※詳しくは、店舗スタッフまでお問い合わせください。
-                    </p>
-                  </section>
-                </section>
-              </section>
-              <section class="box clearfix">
-                <section class="box_area">
-                  <p class="servicename">ギフトラッピング</p>
-                  <section>
-                    <p class="mb10"><img src="img/service/ph_gift.jpg" width="100%" alt="ギフトラッピング"></p>
-                    <ul>
-                      <li>
-                        ご利用の商品に合わせた、ギフトラッピングをご用意しております。<br>
-                        プレゼントに適したボックスや簡易ラッピング、手さげ袋など、多種多様にお取り扱いしております。<br><br>
-                        ※詳しくは、店頭にてご確認ください。
-                      </li>
-                    </ul>
-                  </section>
-                </section>
-              </section>
-            </section>
-      
-            <div class="bottom">
-                <a class="btn" href="#top" role="button">ページTOPに戻る</a>
-            </div>
-    
-            <div id="modal">
-                <h3 class="section-title">
-                    <i class="bi bi-list text-warning"></i>
-                   
-                    <span>MENU</span>
-                </h3>
-                <ul class="menu01">
-                    <li>
-                        <a href="./news.html">ニュース</a>
-                    </li>
-                    <li>
-                        <a href="./file.html">ファイル</a>
-                    </li>
-                    <li>
-                        <a href="./search-shop.html/">店舗検索</a>
-                    </li>
-                    <li>
-                        <a href="./service.html">店舗サービス案内</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">について</a>
-                    </li>
-                    <li>
-                        <a href="">オンラインショップ</a>
-                    </li>
-                </ul>
-            </div>
-            
-          </section>
+                        <dl>
+                            <dt>年会費</dt>
+                            <dd>無料</dd>
+                        </dl>
+                        <dl>
+                            <dt>ご利用可能店舗</dt>
+                            <dd>STONE MARKET各種店舗</dd>
+                        </dl>
+                        <dl>
+                            <dt>会員種別</dt>
+                            <dd>プレミアム会員</dd>
+                        </dl>
+                        <dl>
+                            <dt>ポイント有効期限</dt>
+                            <dd>【プレミアム会員】ポイント最終更新日の翌月から、12ヶ月間利用が無い場合、自動的に全ポイントが失効</dd>
+                        </dl>
+                        <dl>
+                            <dt>ポイントが貯まる対象</dt>
+                            <dd>税抜、値引後の金額</dd>
+                        </dl>
+                        <dl>
+                            <dt>ご利用方法</dt>
+                            <dd>お会計前にアプリ会員証をスタッフにお渡しください。<br>
+                                ※ご購入時のみ、ポイントを付与します。お忘れの場合、後日の付与はできません。
+                            </dd>
+                        </dl>
+                        <p class="info">※2023年1月よりオンラインショップでもご利用頂けるようになりました</p>
+                    </div>
+                </div>
 
-          <footer id="footer">
+                <div class="box">
+                    <div class="box_area">
+                      <p class="servicename">お作りコーナー</p>
+                      <div>
+                        <ul>
+                          <li><img src="img/service/ph04.jpg" width="100%" alt="お作りコーナー"></li><br>
+                          <li>
+                            お好きな天然石を使用して、ブレスレットやストラップなど、世界にひとつだけのオリジナルアクセサリー作成を承っております。
+                            スタッフが心を込めて、お作りいたします。<br>
+                            <br>
+                            店内にはお作りコーナーがございますので、お気軽にお声かけください。一度お作りいただいたアクセサリーは、各店でメンテナンスを承ります。<br>
+                            <br>
+                            ※一部店舗にてお作りコーナーを設けていない場合もございますが、お作り可能な場合もありますので、ご希望の店舗までお問い合わせください。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="box_area">
+                        <p class="servicename">刻印</p>
+                        <div>
+                            <p><img src="img/service/ph_seal.jpg" width="100%" alt="刻印"></p><br>
+                            <dl class="noline">
+                                <dt>各店にて、お承ります。</dt><br>
+                                <dd>リング・・・000円(税抜)</dd>
+                                <dd>プレート型トップ・・・片面 000円(税抜)</dd>
+                            </dl>
+                            <br>
+                            <p class="mb10">納期は、リングは即日、プレート型トップは約2週間程度となっております。</p>
+                            <p class="mb20" style="display:inline-block"> ※デザインにより刻印の難しいものもございます。<br>
+                                ※詳しくは、店舗スタッフまでお問い合わせください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="box_area">
+                        <p class="servicename">ギフトラッピング</p>
+                        <div>
+                            <p class="mb10"><img src="img/service/ph_gift.jpg" width="100%" alt="ギフトラッピング"></p>
+                            <ul>
+                                <li>ご利用の商品に合わせた、ギフトラッピングをご用意しております。<br>
+                                    プレゼントに適したボックスや簡易ラッピング、手さげ袋など、多種多様にお取り扱いしております。<br><br>
+                                    ※詳しくは、店頭にてご確認ください。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom" >
+            <a id="page-top" href="#top" role="button">Topへ戻る</a>
+        </div>
+
+        <div class="social">
+            <div class="heading-1">公式SNSアカウント</div>
+            <div class="flex2">
+                <div class="social2">
+                    <a href="" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+                <div class="social2">
+                    <a href="" target="_blank">
+                        <i class="bi bi-twitter-x"></i> 
+                    </a>
+                </div>
+                <div class="social2">
+                    <a href="" target="_blank">
+                        <i class="bi bi-instagram"></i> 
+                    </a>
+                </div>
+                <div class="social2">
+                    <a href="" target="_blank">
+                        <i class="bi bi-line"></i>
+                    </a>
+                </div>
+            </div> 
+        </div>
+        
+        <div id="modal">
+            <h3 class="section-title">
+                <i class="bi bi-list text-warning"></i>
+               
+                <span>MENU</span>
+            </h3>
+            <ul class="menu01">
+                <li>
+                    <a href="./news.html">ニュース</a>
+                </li>
+                <li>
+                    <a href="./file.html">ファイル</a>
+                </li>
+                <li>
+                    <a href="./search-shop.html">店舗検索</a>
+                </li>
+                <li>
+                    <a href="./service.html">店舗サービス案内</a>
+                </li>
+                <li>
+                    <a href="./about/html">について</a>
+                </li>
+                <li>
+                    <a href="./onlin-shop.html">オンラインショップ</a>
+                </li>
+            </ul>
+        </div>
+        
+        <footer id="footer">
             <section class="address minchou">
-                <a href="" alt="会社概要">会社概要</a><span>｜</span>
-                <a href="" alt="採用情報">採用情報</a><span>｜</span>
-                <a href="" alt="お問い合わせ">お問い合わせ</a><br>
-                <a href="" alt="衣装協力・リース">衣装協力･リースについて</a>
+                <a href="./company.html" alt="会社概要">会社概要</a><span>｜</span>
+                <a href="./recruitment.html" alt="採用情報">採用情報</a><span>｜</span>
+                <a href="./inquiry.html" alt="お問い合わせ">お問い合わせ</a><br>
+                <a href="./lease.html" alt="衣装協力・リース">衣装協力･リースについて</a>
             </section>
             <section class="address minchou">
                 <p style="margin: 0;">表示　スマートフォン ： 
@@ -231,9 +244,6 @@
             <p class="copyright">©  ○○ <br>○○は、登録商標です。</p>
         </footer>
     </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
 </body>
 </html>

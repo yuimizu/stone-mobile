@@ -1,0 +1,50 @@
+.service{
+    margin: 0 2%;;
+    text-align: start;
+    font-size: 87%;
+}
+
+.box {
+    margin-bottom: 3px;
+}
+
+.box_area{
+    border-bottom: 1px dotted;
+    margin-bottom: 20px;
+}
+
+.servicename {
+    border-left: 3px solid #764C24;
+    margin: 10px 0;
+    padding: 0 0 0 4px;
+    font-size: medium;
+}
+
+.service ul{
+    padding: 0;
+}
+
+.center{
+    text-align: center;    
+}
+
+ul img{
+    width: 280px;
+    height: 280px;
+}
+
+.search{
+    margin-top: 20px;
+}
+
+.center2{
+    display: flex;
+    justify-content: center;
+}
+
+.center2 img{
+    width: 140px;
+    height: 95px;
+}
+
+    

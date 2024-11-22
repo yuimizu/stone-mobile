@@ -1,34 +1,31 @@
-#content {
-    margin-top: 0;
-    margin-right: 2%;
-    margin-left: 2%;
-}
+.alin-c{
+    border-bottom: 1px solid #3C1E14;
 
-.title {
-    background: #3C1E14;
-    padding: 5px 4%;
-    margin: 0 -2% 10px -2%;
-    color: #FFFFFF;
 }
-
 .information h4 {
     font-size: 90%;
+    font-weight: bold;      
+}
+
+.fs-sml {
+    font-size: 80%;
+}
+
+.btnmap01{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3C1E14;
+    text-align: start;
 }
 
 .btnmap01 a {
-    display: block;
     margin-bottom: 0px;
     display: block;
     color: #3C1E14;
+    
+    background-size: 14px;
     padding: 8px 2%;
     text-decoration: none;
     font-weight: bold;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: #3C1E14;
-    border-bottom-color: #3C1E14;
-    border-bottom-width: 1px;
     line-height: 1.8em;
 }
-
