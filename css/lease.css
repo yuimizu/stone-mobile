@@ -1,0 +1,54 @@
+.service{
+    margin: 0 2%;
+    font-size: 87%;
+    text-align: start;
+}
+
+.mgb10 {
+    margin-bottom: 10px;
+}
+
+img{
+    padding: 5px;
+}
+
+.center{
+    text-align: center;
+}
+
+.mgt10 {
+    margin-top: 10px;
+}
+
+p.leasetxt {
+    padding: 10px;
+    border-left: #A7824E 2px solid;
+    border-bottom: #A7824E 2px solid;
+    border-right: #A7824E 2px solid;
+}
+
+.title{
+    color: #fff;
+    background: #3C1E14;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.box{
+    margin-bottom: 30px;
+    border-bottom: 1px dotted;
+}
+
+.box_area{
+    margin-bottom: 10px;
+}
+
+.servicename {
+    border-left: 3px solid #764C24;
+    margin: 10px 0;
+    padding: 0 0 0 4px;
+    font-size: medium;
+}
+
+

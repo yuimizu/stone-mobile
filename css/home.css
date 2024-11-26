@@ -3,7 +3,6 @@
 }
 
 .carousel-item img{
-    width: 323px;
     height: 323px;
 }
 
@@ -39,8 +38,7 @@
 
 .box{
     border: double 4px #fff;
-    border-radius: 10px;
-    font-size: 20px;  
+    border-radius: 10px; 
     margin-bottom: 15px;  
     width: 360px;
     height: 96px;
@@ -152,9 +150,13 @@
     margin-bottom: 20px;
 }
 
-.carousel-inner img{
+#brand img{
     width: 162px;
     height: 105px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
 }
 
 #syoseki {
